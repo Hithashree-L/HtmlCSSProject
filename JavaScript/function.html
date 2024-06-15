@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            //general function
+            function add(x,y){
+                return x+y
+            }
+            //document.write(add(2,2))//output will be shown on the website
+            console.log(add(2,3))
+            //anonymous function
+            let sub= function(x,y){
+                return x-y
+            }  //function will be stored inside a variable
+            let res=sub(5,3)
+            console.log(res)
+            //arrow function : keyword and function name will not be used instead a arrow will be used
+            let arrow= (x,y)=>{
+                return x*y
+            }
+            console.log(arrow(5,6))
+            //self invoking function: function that invokes itself
+            (function(){
+                //console.log("Hello") this is not a function thus cannot be used
+                document.write("Hello")
+            }())//arguments to invoke themselves
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!--default behavior of js-->
+<!--data can be used without declaring and can be declared later-->
+<html>
+    <body>
+        <script>
+            h=20 //variable hoisting cannot be used with let and const
+            console.log(h)
+            var h;
+            console.log(funhois(5,7))//function hoisting
+            function funhois(x,y){
+                return x*y
+            }
+        </script>
+    </body>
+</html>

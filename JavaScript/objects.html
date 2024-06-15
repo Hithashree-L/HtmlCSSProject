@@ -1,0 +1,77 @@
+<html>
+    <body>
+        <script>
+            let obj={
+            name:"code",
+            batch:"pes",
+            sub:"js",
+            dept:"cs",
+
+            myname:function(){
+                console.log("my name is " +this.name)
+            }
+        }
+        console.log(obj.myname())
+        console.log(obj.name)
+        console.log(obj.batch)
+        console.log(obj.dept)
+        </script>
+    </body>
+</html>
+
+
+
+
+<html>
+    <body>
+        <script>
+            class person{
+                constructor(firstname, lastname){
+                    this.firstname=firstname
+                    this.lastname=lastname
+                }
+                fullname(){
+                    return this.firstname+" "+this.lastname
+                }
+            }
+            let person1= new person("virat","kohli")
+            console.log(person1.fullname())
+            let person2= new person("rohit","sharma")
+            console.log(person2.fullname())
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <script>
+            function chair(color, material){
+                this.color=color
+                this.material=material
+                this.action=function(){
+                    return "material is "+this.material+" "+"color is "+this.color
+                }
+            }
+            let chair1= new chair("blue", "plastic")
+            console.log(chair1.action())
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <script>
+            let obj1= new Object()
+            obj1.name="A B de"
+            obj1.lname="Villiers"
+            obj1.myfullname= function(){
+                return this.name+" "+this.lname
+            }
+            console.log(obj1)
+            console.log(obj1.name)
+            console.log(obj1.myfullname())
+        </script>
+    </body>
+</html>
