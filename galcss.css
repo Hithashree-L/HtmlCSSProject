@@ -1,0 +1,15 @@
+*body{
+    background-color: rgb(230, 187, 194);
+} 
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    /* background-color: rgb(230, 187, 194);*/
+} 
+.img{
+    height:300px;
+    width:450px;
+} 
+.img:hover{
+ transform: scale(2);
+}
